@@ -24,8 +24,8 @@ let endIndex = 0;
 var appog = '';
 for ( let i=0; i<temp1.length; i++){
     endIndex+= parseInt(temp1[i]);
-    //console.log(startIndex, endIndex)
-    appog += "startIndex = "+startIndex+", endIndex = "+endIndex + "\n";
+    if(i!=1 || i!= 12 || i!=21)
+        appog += ","+"startIndex = "+startIndex+", endIndex = "+endIndex + "\n";
     startIndex = endIndex; 
 }
 console.log(appog);
